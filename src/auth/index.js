@@ -3,7 +3,7 @@ export function storeCurrentUser(user) {
 };
 
 export function getCurrentUser() {
-    const user = JSon .parse(localStorage.getItem('currentUser'));
+    const user = JSON.parse(localStorage.getItem('currentUser'));
     return user;
 };
 

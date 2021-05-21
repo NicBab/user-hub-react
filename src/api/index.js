@@ -19,7 +19,7 @@ export async function getPostsByUser(userId) {
     }
 };
 
-export async function getTodosByUser() {
+export async function getTodosByUser(userId) {
     try {
         const {data} = await axios.get(`${BASE}/users/${userId}/todos`);
         return data
